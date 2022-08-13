@@ -1,1 +1,45 @@
-11111111111111
+#### 1.基本数据类型
+&emsp;&emsp;整数
+&emsp;&emsp;&emsp;&emsp;整型&emsp;&emsp;----int&emsp;&emsp;&emsp;&emsp;----4字节
+&emsp;&emsp;&emsp;&emsp;短整型&emsp;----short int&ensp;&emsp;----2字节
+&emsp;&emsp;&emsp;&emsp;长整型&emsp;----long int&emsp;&emsp;----8字节
+&emsp;&emsp;浮点数【实数】
+&emsp;&emsp;&emsp;&emsp;单精度浮点数&emsp;&emsp;----float&emsp;&emsp;----4字节
+&emsp;&emsp;&emsp;&emsp;双精度浮点数&emsp;&emsp;----double&emsp;&emsp;----8字节
+&emsp;&emsp;字符
+&emsp;&emsp;&emsp;&emsp;char&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;----1
+#### 2.什么是变量
+&emsp;&emsp;变量的本质就是内存中的一段存储空间
+#### 3.变量为什么必须初始化
+&emsp;&emsp;所谓初始化就是赋值的意思
+#### 4.如何定义变量
+&emsp;&emsp;数据类型 变量名 = 要赋的值；
+等价于
+&emsp;&emsp;数据类型 变量名；
+&emsp;&emsp;变量名 = 要赋的值；
+例：
+&emsp;&emsp;int i = 3; &emsp;&emsp;等价于 int i ; &emsp;i = 3;
+&emsp;&emsp;int i , j;&emsp;&emsp;&emsp;等价于 int i ; &emsp;int j ;
+&emsp;&emsp;int i , j = 3 ;&emsp;等价于 int i ;&emsp;int j ;&emsp;j = 3;
+&emsp;&emsp;int i = 3 , j = 5;&emsp;等价于 int i ;&emsp;int j ;&emsp;i= 3； j = 5 ;
+&emsp;&emsp;int i , j ;&emsp;i = j = 5 ;&emsp;等价于 int i , j ;&emsp;i = 5;&emsp;j = 5 ;
+#### 5.什么是进制
+&emsp;&emsp;十进制逢十进一
+&emsp;&emsp;二进制逢二进一
+### 例：
+#### &emsp;&emsp;R进制转换为十进制&emsp;----“R进制”表示十进制以外的进制
+&emsp;&emsp;（11111111.11）~2~
+&emsp;&emsp;=1×2^7^+1×2^6^+1×2^5^+1×2^4^+1×2^3^+1×2^2^+1×2^1^+1×2^0^+1×2^-1^+1×2^-2^
+&emsp;&emsp;=（255.74）~10~
+### 例
+#### &emsp;&emsp;十进制转换为R进制
+&emsp;&emsp;方法：除以R取余法
+&emsp;&emsp;68转换为二进制
+&emsp;&emsp;68÷2=34...0
+&emsp;&emsp;34÷2=17...0
+&emsp;&emsp;17÷2=8...1
+&emsp;&emsp;8÷2=4..0
+&emsp;&emsp;4÷2=2..0
+&emsp;&emsp;2÷2=1..0
+&emsp;&emsp;1÷2=0..1
+&emsp;&emsp;所以，68转换为二进制为1000100
